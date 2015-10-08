@@ -63,7 +63,7 @@ dependencies {
     compile "org.hibernate:hibernate-ehcache"
     compile "org.grails.plugins:scaffolding"
 
-//    compile project(':mygrails3plugin')
+    compile project(':mygrails3plugin')
 
     runtime "org.grails.plugins:asset-pipeline"
 
