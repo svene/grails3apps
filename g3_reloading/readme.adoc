@@ -1,6 +1,17 @@
+Purpose:
+
+* Grails 3 Application/Plugin combination demonstrating that changes in controllers/views of plugin are not properly reloaded by application.
+
 Created with:
 
 * `grails create-app g3reloadingapp`
 * `grails create-plugin g3reloadingplugin`
+
+Reproduce with:
+
+* in folder _g3reloadingapp_ invoke `../gradlew bootRun'
+* point your browser to http://localhost:8080/plug/index which should show: `Plugin page 3`
+* in _PlugController.groovy_ change _3_ to _4_ in the model
+* the console reports: File _...g3reloadingplugin/PlugController.groovy changed, recompiling..._ but when your reload the page in the browser there is no change visible.
 
 
