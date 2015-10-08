@@ -1,0 +1,6 @@
+Created with:
+
+* `grails create-app g3reloadingapp`
+* `grails create-plugin g3reloadingplugin`
+
+
